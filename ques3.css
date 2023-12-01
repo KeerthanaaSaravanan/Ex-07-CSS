@@ -1,0 +1,23 @@
+/* Common styles for both landscape and portrait orientations */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Media query for portrait orientation */
+  @media (orientation: portrait) {
+    body {
+      background-color: #f8f8f8;
+      color: #333;
+    }
+  }
+  
+  /* Media query for landscape orientation */
+  @media (orientation: landscape) {
+    body {
+      background-color: #ececec;
+      color: #444;
+    }
+  }
+  

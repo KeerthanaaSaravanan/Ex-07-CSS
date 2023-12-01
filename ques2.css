@@ -1,0 +1,42 @@
+/* Common styles for both mobile and desktop */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+  }
+  
+  /* Media query for mobile devices (width less than 600px) */
+  @media (max-width: 599px) {
+    body {
+      background-color: #f8f8f8;
+      color: #333;
+      font-size: 16px;
+    }
+  
+    /* Additional styles specific to mobile */
+    .mobile-specific-element {
+      display: block;
+    }
+  
+    .desktop-specific-element {
+      display: none;
+    }
+  }
+  
+  /* Media query for desktop devices (width greater than or equal to 600px) */
+  @media (min-width: 600px) {
+    body {
+      background-color: #ececec;
+      color: #444;
+      font-size: 18px;
+    }
+  
+    /* Additional styles specific to desktop */
+    .mobile-specific-element {
+      display: none;
+    }
+  
+    .desktop-specific-element {
+      display: block;
+    }
+  }
+  
