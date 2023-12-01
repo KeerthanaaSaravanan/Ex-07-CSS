@@ -1,0 +1,21 @@
+/* Default styles */
+body {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Larger font size and line spacing for tablets (600px - 900px) */
+@media (min-width: 600px) and (max-width: 900px) {
+  body {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+}
+
+/* Even larger font size and line spacing for desktops (greater than 900px) */
+@media (min-width: 900px) {
+  body {
+    font-size: 20px;
+    line-height: 1.8;
+  }
+}

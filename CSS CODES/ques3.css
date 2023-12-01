@@ -1,0 +1,15 @@
+/* Styles for landscape orientation */
+@media (orientation: landscape) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+/* Styles for portrait orientation */
+@media (orientation: portrait) {
+  body {
+    background-color: lightgreen;
+  }
+}
+
+  
