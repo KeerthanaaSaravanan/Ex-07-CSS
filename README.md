@@ -46,7 +46,7 @@ Dark Mode Preference:
 
 Use a media query with (prefers-color-scheme: dark) to target devices set to dark mode.
 
-# HTML PROGRAM CODE: 7(i)
+# HTML CODE: 7(i)
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -80,7 +80,7 @@ Use a media query with (prefers-color-scheme: dark) to target devices set to dar
 </html>
 ```
 
-# CSS PROGRAM CODE: 7(i)
+# CSS CODE: 7(i)
 ```
 /* Default styles */
 body {
