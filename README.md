@@ -24,15 +24,18 @@ Link color: Cyan (#17a2b8)
 ## Step 1:
 Start
 Define the document type as HTML.
+
 ## Step 2:
 Open the HTML structure with the necessary head and body sections.
 In the head section, set the title of the webpage and define the styles for the webpage. The styles include:
 -->Default color scheme for the webpage.
 -->Adaptations for small screen sizes.
 -->Adaptations for users who prefer a dark color scheme.
+
 ## Step 3:
 In the body section, create a division with the text “Saveetha Engineering College”.
 Also in the body section, create a list with links to the SEC Home Page, My Camnu, and GitHub.
+
 ## Step 4:
 Close the HTML structure.
 
@@ -89,10 +92,11 @@ Close the HTML structure.
         <li><a href="https://www.github.com">GitHub</a></li>
   </body>
   </html>
-  
 ```
-
 # OUTPUT:7(i):
+![1 1](https://github.com/KeerthanaaSaravanan/Ex-07-CSS/assets/145742596/89e3deb8-fdc4-4454-9fa9-804b42ff51e3)
+![1 2](https://github.com/KeerthanaaSaravanan/Ex-07-CSS/assets/145742596/b6452046-0225-4f8c-945f-d0b9173786ff)
+![1 3](https://github.com/KeerthanaaSaravanan/Ex-07-CSS/assets/145742596/efebfb30-1a41-40d7-8163-505d2557c8c9)
 
 
 # Ex-07(ii)-CSS
@@ -145,16 +149,16 @@ End the HTML document by closing all open tags.
         <li><a href="https://www.github.com">GitHub</a></li>
   </body>
   </html>
-
 ```
 
 # OUTPUT:7(ii):
+![2 1](https://github.com/KeerthanaaSaravanan/Ex-07-CSS/assets/145742596/b15194cf-9df5-4a79-8c37-267afab2a450)
+![2 2](https://github.com/KeerthanaaSaravanan/Ex-07-CSS/assets/145742596/ac6fb5fd-9c3e-4699-9e29-f8fa79773487)
 
  
 # Ex-07(iii)-CSS Orientation-based Media Query
 
 # AIM
-
 To explain how you can use CSS media queries to apply different styles based on the orientation (landscape or portrait) of the device. Provide a CSS example where you change the background color of the body based on the orientation.
 
 # DESIGN STEPS: 7(iii)
@@ -208,17 +212,16 @@ Open your HTML file in a web browser and change the orientation of your device t
         <li><a href="https://www.github.com">GitHub</a></li>
   </body>
   </html>
-
 ```
 
 # OUTPUT:7(iii):
-
+![3 1](https://github.com/KeerthanaaSaravanan/Ex-07-CSS/assets/145742596/44f044e8-780a-464e-bd80-78dea4366561)
+![3 2](https://github.com/KeerthanaaSaravanan/Ex-07-CSS/assets/145742596/13ec3f74-aac8-40e7-9332-011a38dd64f9)
 
 
 # Ex-07(iv)-CSS Responsive Typography
 
 # AIM
-
 To describe how you would use media queries to adjust typography (like font size and line spacing) on a website to improve readability across different device sizes, from mobile phones to large desktop monitors. Include a CSS code snippet in your explanation.
 
 # DESIGN STEPS: 7(iv)
@@ -289,13 +292,14 @@ Iterate: Adjust your media queries and styles as needed based on your tests.
 ```
 
 # OUTPUT:7(iv):
-
+![4 1](https://github.com/KeerthanaaSaravanan/Ex-07-CSS/assets/145742596/608e911b-2318-4cc6-b590-c66b2cd7138b)
+![4 2](https://github.com/KeerthanaaSaravanan/Ex-07-CSS/assets/145742596/f9b6d1f9-b9b9-4601-b4f6-e54cd5adaae4)
+![4 3](https://github.com/KeerthanaaSaravanan/Ex-07-CSS/assets/145742596/51b285e6-4591-4983-89ce-1aef5f026173)
 
 
 # Ex-07(v)-Print-friendly CSS
 
 # AIM
-
 To use a media query to change the styling of a webpage when it is printed, such as changing the background to white and hiding non-essential elements. Provide a CSS example.
 
 # DESIGN STEPS: 7(v)
@@ -319,7 +323,6 @@ Test your styles using the print preview feature in browsers to ensure they work
 
 ## Step 7:
 Iterate: Adjust your media queries and styles as needed based on your tests.
-
 
 # CODE: 7(v)
 ```<!DOCTYPE html>
@@ -358,17 +361,16 @@ Iterate: Adjust your media queries and styles as needed based on your tests.
         <li><a href="https://www.github.com">GitHub</a></li>
   </body>
   </html>
-
 ```
 
 # OUTPUT:7(v):
-
+![5 1](https://github.com/KeerthanaaSaravanan/Ex-07-CSS/assets/145742596/0b425141-1351-445d-9f1b-3ba87c51d708)
+![5 2](https://github.com/KeerthanaaSaravanan/Ex-07-CSS/assets/145742596/9f64a5b9-a65a-4574-a34e-0146e9afbc6b)
 
 
 # Ex-07(vi)-Dark Mode Implementation
 
 # AIM
-
 With the increasing popularity of dark mode in user interfaces, explain how you would use a media query to detect if the user has set their system to prefer a dark color scheme. Provide an example of how you would change the background and text colors of a website based on this preference.
 
 # DESIGN STEPS: 7(vi)
@@ -427,11 +429,11 @@ Remember to test your website in both light and dark modes to ensure the colors 
         <li><a href="https://www.github.com">GitHub</a></li>
   </body>
   </html>
-
 ```
 
 # OUTPUT:7(vi):
-
+![6 1](https://github.com/KeerthanaaSaravanan/Ex-07-CSS/assets/145742596/0bd8aac0-b99c-48b2-937a-8078fa5552f4)
+![6 2](https://github.com/KeerthanaaSaravanan/Ex-07-CSS/assets/145742596/99c68b8d-59cd-48c4-a5e7-911cf3ec3892)
 
 
 
