@@ -1,16 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Web Page</title>
-    <link rel="stylesheet" type="text/css" href="ques5.css">
+<style type="text/css">
+    div, li {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    @media print {
+        body {
+            background-color: white;
+        }
+
+        div, li {
+            font-size: 12px;
+            line-height: 1.4;
+        }
+
+        /* Add any non-essential elements you want to hide when printing */
+        .non-essential {
+            display: none;
+        }
+    }
+</style>
 </head>
 <body>
-    <h1>Welcome to My Web Page!</h1>
-    <p>This is a paragraph of text. Here are some important links:</p>
+    <div>
+    Saveetha Engineering College
+  </div>
     <ul>
-        <li><a href="https://www.bing.com">Bing Search</a></li>
-        <li><a href="https://www.microsoft.com">Microsoft</a></li>
+        <li><a href="https://www.saveetha.ac.in/">SEC Home Page</a></li>
+        <li><a href="http://lms.ai.saveetha.in/my/">My Camu</a></li>
         <li><a href="https://www.github.com">GitHub</a></li>
-    </ul>
-</body>
-</html>
+  </body>
+  </html>

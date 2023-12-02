@@ -22,74 +22,74 @@ Link color: Cyan (#17a2b8)
 
 # DESIGN STEPS: 7(i)
 ## Step 1:
-
-Set Default Color Scheme
-
+Start
+Define the document type as HTML.
 ## Step 2:
-
-Small Screen Adaptation (Max-width: 600px)
-
+Open the HTML structure with the necessary head and body sections.
+In the head section, set the title of the webpage and define the styles for the webpage. The styles include:
+-->Default color scheme for the webpage.
+-->Adaptations for small screen sizes.
+-->Adaptations for users who prefer a dark color scheme.
 ## Step 3:
+In the body section, create a division with the text “Saveetha Engineering College”.
+Also in the body section, create a list with links to the SEC Home Page, My Camnu, and GitHub.
+## Step 4:
+Close the HTML structure.
 
-Dark Mode Preference:
-Use a media query with (prefers-color-scheme: dark) to target devices set to dark mode.
-
-# HTML CODE: 7(i)
+# CODE: 7(i)
 ```
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Web Page</title>
-    <link rel="stylesheet" type="text/css" href="default.css">
+    <title>EX-07(i)</title>
+    <style>
+    /* Default Color Scheme */
+    body {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        
+        a {
+            color: #007bff;
+        }
+        
+        /* Small Screen Adaptation */
+        @media (max-width: 600px) {
+            body {
+                background-color: #333;
+                color: #f4f4f4;
+            }
+        
+            a {
+                color: #28a745;
+            }
+        }
+        
+        /* Dark Mode Preference */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #000;
+                color: #fff;
+            }
+        
+            a {
+                color: #17a2b8;
+            }
+        }
+
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Web Page!</h1>
-    <p>This is a paragraph of text. Here are some important links:</p>
+    <div>
+    Saveetha Engineering College
+  </div>
     <ul>
-        <li><a href="https://www.bing.com">Bing Search</a></li>
-        <li><a href="https://www.microsoft.com">Microsoft</a></li>
+        <li><a href="https://www.saveetha.ac.in/">SEC Home Page</a></li>
+        <li><a href="http://lms.ai.saveetha.in/my/">My Camnu</a></li>
         <li><a href="https://www.github.com">GitHub</a></li>
-    </ul>
-</body>
-</html>
-```
-
-# CSS CODE: 7(i)
-```
-/* Default Color Scheme */
-body {
-  background-color: #f4f4f4;
-  color: #333;
-}
-
-a {
-  color: #007bff;
-}
-
-/* Small Screen Adaptation */
-@media (max-width: 600px) {
-  body {
-    background-color: #333;
-    color: #f4f4f4;
-  }
-
-  a {
-    color: #28a745;
-  }
-}
-
-/* Dark Mode Preference */
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #000;
-    color: #fff;
-  }
-
-  a {
-    color: #17a2b8;
-  }
-}
-
+  </body>
+  </html>
+  
 ```
 
 # OUTPUT:7(i):
@@ -103,24 +103,48 @@ To use a media query in CSS to apply different styles to a webpage for mobile de
 
 # DESIGN STEPS: 7(ii)
 ## Step 1:
-
-Styles for Mobile Devices (Width < 600px):
-Use a media query with (max-width: 599px) to target devices with a maximum width of 599 pixels.
-
+Start the HTML document and create the root <html> element.
 ## Step 2:
+Inside <html>, create the <head> element and include a <style> element for CSS rules.
+## Step 3:
+Define CSS rules for desktop devices.
+Use a media query to define CSS rules for mobile devices.
+## Step 4:
+Create the <body> element inside <html>, which will contain the webpage content.
+## Step 5:
+Inside <body>, create a <div> for the heading and an <ul> for the list of hyperlinks.
+## Step 6:
+End the HTML document by closing all open tags.
 
-Styles for Desktop Devices (Width >= 600px):
-Use a media query with (min-width: 600px) to target devices with a minimum width of 600 pixels.
-
-
-# HTML CODE: 7(ii)
+# CODE: 7(ii)
 ```
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+    /* CSS rules for desktop devices */
+    body {
+        background-color: lightblue;
+    }
 
-```
-
-# CSS CODE: 7(ii)
-```
-
+    /* CSS rules for mobile devices */
+    @media only screen and (max-width: 600px) {
+        body {
+            background-color: lightgreen;
+        }
+    }
+</style>
+</head>
+<body>
+    <div>
+    Saveetha Engineering College
+  </div>
+    <ul>
+        <li><a href="https://www.saveetha.ac.in/">SEC Home Page</a></li>
+        <li><a href="http://lms.ai.saveetha.in/my/">My Camu</a></li>
+        <li><a href="https://www.github.com">GitHub</a></li>
+  </body>
+  </html>
 
 ```
 
@@ -135,29 +159,55 @@ To explain how you can use CSS media queries to apply different styles based on 
 
 # DESIGN STEPS: 7(iii)
 ## Step 1:
-
-Set default Styles:
-Set the default background color for the body to #f0f0f0.
-Set the default text color to #333.
+Identify the section in your HTML file where you want to add the CSS. This is typically within the <style> tags in the <head> section.
 
 ## Step 2:
-
-Media Query for Landscape Orientation:
-Check if the device is in landscape orientation using the @media rule and the orientation: landscape condition.
+Define a CSS media query for each orientation. The syntax for a media query is @media (orientation: value), where value can be either portrait or landscape.
 
 ## Step 3:
+Within each media query, specify the CSS rules you want to apply. In this case, you want to change the background color of the body.
 
-Media Query for Portrait Orientation:
-Check if the device is in portrait orientation using the @media rule and the orientation: portrait condition.
+## Step 4:
+Close the media query with a }.
 
-# HTML CODE: 7(iii)
+## Step 5:
+Repeat steps 2-4 for the other orientation.
+
+## Step 6:
+Save your HTML file.
+
+## Step 7:
+Open your HTML file in a web browser and change the orientation of your device to see the different styles applied.
+
+# CODE: 7(iii)
 ```
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+    @media (orientation: portrait) {
+        body {
+            background-color: rgb(228, 236, 192);
+        }
+    }
 
-```
-
-# CSS CODE: 7(iii)
-```
-
+    @media (orientation: landscape) {
+        body {
+            background-color: rgb(235, 144, 238);
+        }
+    }
+</style>
+</head>
+<body>
+    <div>
+    Saveetha Engineering College
+  </div>
+    <ul>
+        <li><a href="https://www.saveetha.ac.in/">SEC Home Page</a></li>
+        <li><a href="http://lms.ai.saveetha.in/my/">My Camu</a></li>
+        <li><a href="https://www.github.com">GitHub</a></li>
+  </body>
+  </html>
 
 ```
 
@@ -173,25 +223,69 @@ To describe how you would use media queries to adjust typography (like font size
 
 # DESIGN STEPS: 7(iv)
 ## Step 1:
-
-Set Default Typography Styles
+Identify the HTML elements you want to style. In your case, it’s the div and li elements.
 
 ## Step 2:
-
-Define Media Queries for Different Screen Sizes
+Define the base styles for these elements. This will be the default styling that applies when no media queries match.
 
 ## Step 3:
+Use media queries to apply different styles for different device sizes. The @media rule is used in CSS to apply styles for specific media types/devices.
 
-Adjust Typography Styles Within Media Queries
+## Step 4:
+Inside the media queries, specify the device size for which the styles should apply. You can use min-width and max-width properties to target devices with widths within a certain range.
 
-# HTML CODE: 7(iv)
+## Step 5:
+Adjust Typography: Inside each media query block, adjust the typography (like font size and line spacing) for the identified elements.
+
+## Step 6:
+Test Your Styles.
+
+## Step 7:
+Iterate: Adjust your media queries and styles as needed based on your tests.
+
+# CODE: 7(iv)
 ```
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+    div, li {
+        font-size: 16px;
+        line-height: 1.5;
+    }
 
-```
+    @media screen and (min-width: 600px) {
+        div, li {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+    }
 
-# CSS CODE: 7(iv)
-```
+    @media screen and (min-width: 900px) {
+        div, li {
+            font-size: 20px;
+            line-height: 1.7;
+        }
+    }
 
+    @media screen and (min-width: 1200px) {
+        div, li {
+            font-size: 22px;
+            line-height: 1.8;
+        }
+    }
+</style>
+</head>
+<body>
+    <div>
+    Saveetha Engineering College
+  </div>
+    <ul>
+        <li><a href="https://www.saveetha.ac.in/">SEC Home Page</a></li>
+        <li><a href="http://lms.ai.saveetha.in/my/">My Camu</a></li>
+        <li><a href="https://www.github.com">GitHub</a></li>
+  </body>
+  </html>
 ```
 
 # OUTPUT:7(iv):
@@ -202,25 +296,68 @@ Adjust Typography Styles Within Media Queries
 
 # AIM
 
-To use a media query to change the styling of a webpage when it is printed, such as changing the background to white and hiding non-essential elements? Provide a CSS example.
+To use a media query to change the styling of a webpage when it is printed, such as changing the background to white and hiding non-essential elements. Provide a CSS example.
 
 # DESIGN STEPS: 7(v)
 ## Step 1:
-Set Default Webpage Styles
+Identify the HTML elements you want to style. In your case, it’s the div and li elements.
 
 ## Step 2:
-Define Media Query for Print Styles
+Define the base styles for these elements. This will be the default styling that applies when no media queries match.
 
 ## Step 3:
-Adjust Styles for Printing
+Use media queries to apply different styles for different media types. The @media rule is used in CSS to apply styles for specific media types/devices.
 
-# HTML CODE: 7(v)
-```
+## Step 4:
+Inside the media queries, specify the media type for which the styles should apply. You can use print to target printers.
 
-```
+## Step 5:
+Adjust Styles: Inside each media query block, adjust the styles for the identified elements. You can change the background to white and hide non-essential elements.
 
-# CSS CODE: 7(v)
-```
+## Step 6:
+Test your styles using the print preview feature in browsers to ensure they work as expected.
+
+## Step 7:
+Iterate: Adjust your media queries and styles as needed based on your tests.
+
+
+# CODE: 7(v)
+```<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+    div, li {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    @media print {
+        body {
+            background-color: white;
+        }
+
+        div, li {
+            font-size: 12px;
+            line-height: 1.4;
+        }
+
+        /* Add any non-essential elements you want to hide when printing */
+        .non-essential {
+            display: none;
+        }
+    }
+</style>
+</head>
+<body>
+    <div>
+    Saveetha Engineering College
+  </div>
+    <ul>
+        <li><a href="https://www.saveetha.ac.in/">SEC Home Page</a></li>
+        <li><a href="http://lms.ai.saveetha.in/my/">My Camu</a></li>
+        <li><a href="https://www.github.com">GitHub</a></li>
+  </body>
+  </html>
 
 ```
 
@@ -236,27 +373,66 @@ With the increasing popularity of dark mode in user interfaces, explain how you 
 
 # DESIGN STEPS: 7(vi)
 ## Step 1:
-Set Default Webpage Styles
+Use the prefers-color-scheme media feature, which is used to detect if the user has requested the system use a light or dark color theme.
 
 ## Step 2:
-Define Media Query for Dark Mode
+The prefers-color-scheme media feature can have the values light, dark, or no-preference.
 
 ## Step 3:
-Adjust Styles for Dark Mode
+In your CSS, you can use this feature within a @media rule to apply different styles depending on the user’s preference.
 
-# HTML CODE: 7(vi)
+## Step 4:
+You can set the background color to black and the text color to white when the user prefers a dark color scheme.
+
+## Step 5:
+Conversely, you can set the background color to white and the text color to black when the user prefers a light color scheme.
+
+## Step 6:
+If the user has no preference, you can choose a default color scheme.
+
+## Step 7:
+Remember to test your website in both light and dark modes to ensure the colors work well in both settings.
+
+# CODE: 7(vi)
 ```
-
-```
-
-# CSS CODE: 7(vi)
-```
-
-  
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+    body {
+        background-color: white;
+        color: black;
+    }
+    @media (prefers-color-scheme: dark) {
+        body {
+            background-color: black;
+            color: white;
+        }
+    }
+    @media (prefers-color-scheme: light) {
+        body {
+            background-color: white;
+            color: black;
+        }
+    }
+</style>
+</head>
+<body>
+    <div>
+    Saveetha Engineering College
+  </div>
+    <ul>
+        <li><a href="https://www.saveetha.ac.in/">SEC Home Page</a></li>
+        <li><a href="http://lms.ai.saveetha.in/my/">My Camu</a></li>
+        <li><a href="https://www.github.com">GitHub</a></li>
+  </body>
+  </html>
 
 ```
 
 # OUTPUT:7(vi):
+
+
 
 
 
